@@ -1,0 +1,8 @@
+RewriteEngine on 
+
+RewriteCond %{REQUEST_URI} ^\/foto\/?$
+RewriteRule ^(.*)$ http://www.zavodkorund.ru/photo? [R=301,L]
+
+RewriteCond %{REQUEST_URI} !public/
+RewriteRule (.*) /public/$1 [L]
+

@@ -1,0 +1,24 @@
+User-agent: Yandex
+Disallow: /admin
+Disallow: /vendor
+Disallow: /photos
+Disallow: /images
+Disallow: /files
+Disallow: /ckeditor
+Disallow: /assets
+Disallow: */index.php
+Disallow: /shlifovanie$
+Disallow: /video/video/liniya-srashchivaniya-fc51a
+Disallow: /?id=*
+Clean-param: tag&year&month /press
+Sitemap: http://www.zavodkorund.ru/sitemap.xml
+Host: www.zavodkorund.ru
+
+User-agent: *
+Disallow: /*?
+Disallow: /admin
+Disallow: */index.php
+Disallow: /shlifovanie$
+Disallow: /video/video/liniya-srashchivaniya-fc51a
+Disallow: /?id=*
+Sitemap: http://www.zavodkorund.ru/sitemap.xml

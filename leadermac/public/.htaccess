@@ -1,0 +1,65 @@
+<IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews
+    </IfModule>
+
+	Options +FollowSymLinks
+
+<filesMatch ".(css|jpg|jpeg|png|gif|js|ico|JPG|JPEG)$">
+Header set Cache-Control "max-age=2592000, public"
+</filesMatch>
+
+
+
+    RewriteEngine On
+
+   
+    RewriteCond %{HTTP_HOST} ^zavodkorund\.ru [NC]
+    RewriteRule ^(.*)$ http://www.zavodkorund.ru/$1 [R=301,L]
+
+    RewriteCond %{HTTP_HOST} ^www\.zavodkorund\.ru$ [NC]
+    RewriteRule  ^www.zavodkorund.ru/stati/pravila-ustanovki-i-ekspluatacii-shlifovalnyh-krugov http://www.zavodkorund.ru/stati/ustanovka-shlifovalnyh-krugov [L,R=301]
+	RewriteRule  ^stati/pravila-ustanovki-i-ekspluatacii-shlifovalnyh-krugov http://www.zavodkorund.ru/stati/ustanovka-shlifovalnyh-krugov [L,R=301]
+RewriteRule  ^stati/pravila-ustanovki-i-ekspluatacii-shlifovalnyh-krugov/ http://www.zavodkorund.ru/stati/ustanovka-shlifovalnyh-krugov [L,R=301]
+RewriteRule  ^stati/shlifovanie-derevyannogo-pola http://www.zavodkorund.ru/stati/shlifovanie-derevyannogo-pola-svoimi-rukami [L,R=301]
+RewriteRule  ^stati/shlifovanie-derevyannogo-pola/ http://www.zavodkorund.ru/stati/shlifovanie-derevyannogo-pola-svoimi-rukami [L,R=301]
+RewriteRule  ^stati/raznovidnosti-polirovalnyh-krugov http://www.zavodkorund.ru/stati/vidy-abrazivnyh-polirovalnyh-krugov [L,R=301]
+RewriteRule  ^stati/raznovidnosti-polirovalnyh-krugov/ http://www.zavodkorund.ru/stati/vidy-abrazivnyh-polirovalnyh-krugov [L,R=301]
+RewriteRule  ^stati/otreznye-krugi-po-gostu-21963-2002 http://www.zavodkorund.ru/stati/krug-otreznoy-gost-1963-2002 [L,R=301]
+RewriteRule  ^stati/otreznye-krugi-po-gostu-21963-2002/ http://www.zavodkorund.ru/stati/krug-otreznoy-gost-1963-2002 [L,R=301]
+RewriteRule  ^stati/abrazivnye-materialy-i-metody-abrazivnoy-obrabotki http://www.zavodkorund.ru/stati/abrazivnye-shlifovalnye-materialy [L,R=301]
+RewriteRule  ^stati/abrazivnye-materialy-i-metody-abrazivnoy-obrabotki/ http://www.zavodkorund.ru/stati/abrazivnye-shlifovalnye-materialy [L,R=301]
+RewriteRule  ^stati/vidy-braka-pri-shlifovanii-i-mery-ego-preduprezhdeniya http://www.zavodkorund.ru/stati/brak-pri-shlifovanii [L,R=301]
+RewriteRule  ^stati/vidy-braka-pri-shlifovanii-i-mery-ego-preduprezhdeniya/ http://www.zavodkorund.ru/stati/brak-pri-shlifovanii [L,R=301]
+RewriteRule  ^stati/vidy-i-harakteristiki-shlifovalnyh-lent http://www.zavodkorund.ru/stati/zernistost-shlifovalnoj-lenty-markirovka [L,R=301]
+RewriteRule  ^stati/vidy-i-harakteristiki-shlifovalnyh-lent/ http://www.zavodkorund.ru/stati/zernistost-shlifovalnoj-lenty-markirovka [L,R=301]
+RewriteRule  ^stati/vybiraem-nasadku-na-bolgarku-dlya-obrabotki-drevesiny http://www.zavodkorund.ru/stati/shlifovalnyj-disk-po-drevu-na-bolgarku [L,R=301]
+RewriteRule  ^stati/vybiraem-nasadku-na-bolgarku-dlya-obrabotki-drevesiny/ http://www.zavodkorund.ru/stati/shlifovalnyj-disk-po-drevu-na-bolgarku [L,R=301]
+RewriteRule  ^stati/markirovka-i-raznovidnosti-shlifovalnyh-krugov http://www.zavodkorund.ru/stati/markirovka-i-vidy-shlifovalnyh-krugov [L,R=301]
+RewriteRule  ^stati/markirovka-i-raznovidnosti-shlifovalnyh-krugov/ http://www.zavodkorund.ru/stati/markirovka-i-vidy-shlifovalnyh-krugov [L,R=301]
+RewriteRule  ^stati/rezka-keramicheskoy-plitki-bolgarkoy http://www.zavodkorund.ru/stati/rezka-plitki-bolgarkoy [L,R=301]
+RewriteRule  ^stati/rezka-keramicheskoy-plitki-bolgarkoy/ http://www.zavodkorund.ru/stati/rezka-plitki-bolgarkoy [L,R=301]
+RewriteRule  ^stati/shlifovanie-betonnogo-pola http://www.zavodkorund.ru/stati/shlifovka-betona [L,R=301]
+RewriteRule  ^stati/shlifovanie-betonnogo-pola/ http://www.zavodkorund.ru/stati/shlifovka-betona [L,R=301]
+RewriteRule  ^uslugi http://www.zavodkorund.ru/izgotovlenie-abrazivnyh-instrumentov [L,R=301]
+RewriteRule  ^uslugi/ http://www.zavodkorund.ru/izgotovlenie-abrazivnyh-instrumentov [L,R=301]
+RewriteRule  ^products/flep-diski-i-fobrovye-diski http://www.zavodkorund.ru/products/krug-lepestkovyj-torcevoj-klt [L,R=301]
+RewriteRule  ^products/flep-diski-i-fobrovye-diski/ http://www.zavodkorund.ru/products/krug-lepestkovyj-torcevoj-klt [L,R=301]
+RewriteRule  ^products/gubki-abraziv-na-porolone http://www.zavodkorund.ru/products/shlifovalnye-abrazivnye-gubki [L,R=301]
+RewriteRule  ^products/gubki-abraziv-na-porolone/ http://www.zavodkorund.ru/products/shlifovalnye-abrazivnye-gubki [L,R=301]
+
+
+
+     # Redirect Trailing Slashes If Not A Folder...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)/$ /$1 [L,R=301]
+
+    # Handle Front Controller...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [L]
+
+    # Handle Authorization Header
+    RewriteCond %{HTTP:Authorization} .
+    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+</IfModule>
